@@ -1,6 +1,6 @@
 # vue-basic-calendar
 
-> A Vue.js project
+> A basic calendar Vue.js component package.
 
 ## Build Setup
 
