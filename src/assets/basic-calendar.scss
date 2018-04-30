@@ -1,0 +1,76 @@
+
+.calendar-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.calendar-grid li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0.344%;
+    width: 13.5%;
+}
+
+.calendar-grid li > div {
+    background: #4679BD;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 50%;
+    position: relative;
+}
+
+.calendar-grid li > div:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.calendar-grid li > div > div {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.calendar-grid li > div > div > div {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.calendar-grid li > div > div > div span {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.calendar-month {
+    width: 100%;
+}
+
+.calendar-year {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+.calendar-year .calendar-month {
+    display: inline-block;
+    width: 24%;
+}
+
+.calendar-weekdays li > div {
+    background: none;
+}
+
+.calendar-days li > div {
+    background: #ddd;
+}
+
+.calendar-days li.empty > div {
+    background: none;
+    cursor: auto;
+}
